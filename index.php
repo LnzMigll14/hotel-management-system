@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red Dragon Hotel</title>
+    <title>RED DRAGON HOTEL</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -58,14 +58,14 @@
             background-color: #279e8c;
         }
 
-        .availability-form{
+        .availability-form {
             margin-top: -50px;
             z-index: 2;
             position: relative;
         }
 
-        @media screen and (max-width: 575px){
-            .availability-form{
+        @media screen and (max-width: 575px) {
+            .availability-form {
                 margin-top: 25px;
                 padding: 0 35px;
             }
@@ -257,7 +257,7 @@
                                 <option value="3">Three</option>
                             </select>
                         </div>
-                        <div class="col-lg-1 ">
+                        <div class="col-lg-1">
                             <button type="submit" class="btn text-white shadow-none custom-bg">Submit</button>
                         </div>
                     </div>
@@ -266,6 +266,25 @@
         </div>
     </div>
 
+    <h2 class="mt-5 pt-4 mb-4 text-center fw-bold">OUR ROOMS</h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
+                    <img src="/images/rooms/1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Deluxe Suite with Garden View</h5>
+                        <p class="card-text">Relax in a spacious room with a king-sized bed, vaulted ceilings, and elegant wooden accents. Enjoy serene garden views from your private patio, perfect for unwinding in comfort and style.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 text-center mt-5">
+                <a href="#" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">More Rooms <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
