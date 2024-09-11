@@ -7,6 +7,7 @@
     <title>Red Dragon Hotel</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <style>
@@ -20,20 +21,20 @@
 
         .nav-link {
             transition: transform 0.3s ease;
-           
+
         }
 
-        
+
         .nav-link:hover {
             transform: translateY(-4px);
-            
+
         }
 
-        
+
         @media (min-width: 768px) {
             .nav-link:hover {
                 transform: translateY(-8px);
-              
+
             }
         }
 
@@ -47,11 +48,33 @@
         input[type=number] {
             -moz-appearance: textfield;
         }
+
+
+        .custom-bg {
+            background-color: #2ec1ac;
+        }
+
+        .custom-bg:hover {
+            background-color: #279e8c;
+        }
+
+        .availability-form{
+            margin-top: -50px;
+            z-index: 2;
+            position: relative;
+        }
+
+        @media screen and (max-width: 575px){
+            .availability-form{
+                margin-top: 25px;
+                padding: 0 35px;
+            }
+        }
     </style>
 
 </head>
 
-<body>
+<body class="bg-light">
     <nav class="navbar navbar-expand-lg navbar-light bg-white px-lg-3 py-lg-2 shadow-sm sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand text-custom-red fw-bold fs-3 me-5" href="#">RED DRAGON HOTEL</a>
@@ -90,7 +113,6 @@
             </div>
         </div>
     </nav>
-
 
     <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -163,7 +185,7 @@
                                 </div>
                                 <div class="col-md-6 p-0 mb-3">
                                     <label class="form-label">Date of Birth</label>
-                                    <input type="number" class="form-control shadow-none">
+                                    <input type="date" class="form-control shadow-none">
                                 </div>
                                 <div class="col-md-6 ps-0 mb-3">
                                     <label class="form-label">Password</label>
@@ -184,9 +206,82 @@
         </div>
     </div>
 
+    <!-- Swiper -->
+    <div class="container-fluid px-lg-4 mt-4">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/carousel/1.jpg" class="h-50 w-100 d-block" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="" />
+                </div>
+                <div class="swiper-slide" id="carousel">
+                    <img src="images/carousel/3.png" class=" w-100 d-block" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/carousel/4.png" class="w-100 d-block" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container availability-form">
+        <div class="row">
+            <div class="col-lg-12 bg-white shadow p-4 rounded">
+                <h5 class="mb-4">Check Booking Availability</h5>
+                <form>
+                    <div class="row align-items-end">
+                        <div class="col-lg-3 mb-2">
+                            <label class="form-label" style="font-weight: 500;">Check in</label>
+                            <input type="date" class="form-control shadow-none">
+                        </div>
+                        <div class="col-lg-3 mb-2">
+                            <label class="form-label" style="font-weight: 500;">Check out</label>
+                            <input type="date" class="form-control shadow-none">
+                        </div>
+                        <div class="col-lg-3 mb-2">
+                            <label class="form-label" style="font-weight: 500;">Adult</label>
+                            <select class="form-select shadow-none">
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2 mb-2">
+                            <label class="form-label" style="font-weight: 500;">Children</label>
+                            <select class="form-select shadow-none">
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-1 ">
+                            <button type="submit" class="btn text-white shadow-none custom-bg">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            effect: "fade",
+            loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            }
+        });
+    </script>
+
+
 </body>
 
 </html>
