@@ -1,0 +1,46 @@
+* {
+  font-family: "Poppins", "sans-serif";
+}
+
+.text-custom-red {
+  color: #bc1823;
+}
+
+.nav-link {
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+  transform: translateY(-4px);
+}
+
+@media (min-width: 768px) {
+  .nav-link:hover {
+    transform: translateY(-8px);
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.custom-bg {
+  background-color: #2ec1ac;
+  border: 1px solid #2ec1ac;
+}
+
+.custom-bg:hover {
+  background-color: #279e8c;
+  border: #279e8c;
+}
+
+.icon-100{
+    font-size: 100px;
+}
