@@ -531,15 +531,17 @@
                             <i class="bi bi-instagram"></i> Instagram
                         </span>
                     </a>
-
-            </div>
-
             </div>
         </div>
     </div>
     </div>
 
-    
+    <!-- Footer section -->
+     <div>
+        
+     </div>
+
+
 
     <br /><br /><br />
     <br /><br /><br />
