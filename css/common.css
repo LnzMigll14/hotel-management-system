@@ -16,7 +16,7 @@
 
 @media (min-width: 768px) {
   .nav-link:hover {
-    transform: translateY(-8px);
+    transform: translateY(-5px);
   }
 }
 
