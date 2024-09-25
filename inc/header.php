@@ -29,7 +29,7 @@
                     <a class="nav-link fw-bold" href="#">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-bold" href="#">About</a>
+                    <a class="nav-link fw-bold" href="about.php">About</a>
                 </li>
             </ul>
             <div class="d-flex" role="search">
