@@ -346,9 +346,6 @@
   <!-- Footer section -->
   <?php require('inc/footer.php'); ?>
 
-  <br /><br /><br />
-  <br /><br /><br />
-
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <script>
