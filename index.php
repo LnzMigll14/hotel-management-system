@@ -357,6 +357,20 @@
         delay: 3500,
         disableOnInteraction: false,
       },
+      breakpoints:{
+        320: {
+          sliderPerView: 1,
+        },
+        640: {
+          sliderPerView: 1,
+        },
+        768: {
+          sliderPerView: 2,
+        },
+        1024: {
+          sliderPerView: 3,
+        },
+      }
     });
   </script>
 </body>
