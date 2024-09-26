@@ -301,7 +301,7 @@
         <iframe
           class="w-100"
           height="320px"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506609.9131584569!2d125.45107234999999!3d7.253364699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96d9f519e327f%3A0xb53a24589f79c573!2sDavao%20City%2C%20Davao%20del%20Sur!5e0!3m2!1sen!2sph!4v1726122385524!5m2!1sen!2sph"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.518724033255!2d125.60279307737683!3d7.0656922747250865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96d785701cf6d%3A0x2508af7838845384!2s123%20San%20Pedro%20St%2C%20Poblacion%20District%2C%20Davao%20City%2C%20Davao%20del%20Sur!5e0!3m2!1sen!2sph!4v1727324084638!5m2!1sen!2sph"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
@@ -313,6 +313,7 @@
             class="d-inline-block text-decoration-none text-dark mb-2">
             <i class="bi bi-telephone-fill"></i> (082)296-2606
           </a>
+          
         </div>
 
         <div class="bg-white p-4 rounded mb-4">
@@ -357,7 +358,7 @@
         delay: 3500,
         disableOnInteraction: false,
       },
-      breakpoints:{
+      breakpoints: {
         320: {
           sliderPerView: 1,
         },
