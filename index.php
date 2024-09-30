@@ -109,7 +109,7 @@
           <div class="card-body">
             <h5 class="card-title">Deluxe Suite with Garden View</h5>
             <h6>&#8369;5150.00 per night</h6>
-            <div class="features mb-3">
+            <div class="features mb-4">
               <h6 class="mb-1">Features</h6>
               <span class="badge rounded-pill bg-light text-dark text-wrap">
                 King-sized bed
@@ -121,7 +121,7 @@
                 24/7 room service
               </span>
             </div>
-            <div class="facilities mb-3">
+            <div class="facilities mb-4">
               <h6 class="mb-1">Facilities</h6>
               <span class="badge rounded-pill bg-light text-dark text-wrap">
                 Flat Screen Television
@@ -136,6 +136,78 @@
                 Room Heater
               </span>
             </div>
+            <div class="guests mb-4">
+              <h6 class="mb-1">Guests</h6>
+              <span class="badge rounded-pill bg-light text-dark text-wrap">
+                5 Adults
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap">
+                4 Children
+              </span>
+            </div>
+            <div class="rating mb-4">
+              <h6 class="mb-1">Rating</h6>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+            </div>
+            <a
+              href="#"
+              class="btn btn-primary d-flex justify-content-center mb-2">Book</a>
+            <a
+              href="#"
+              class="btn btn-sm btn-outline-dark shadow-none d-flex justify-content-center">More Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 my-3">
+        <div
+          class="card border-0 shadow"
+          style="max-width: 350px; margin: auto">
+          <img src="/images/rooms/1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Deluxe Suite with Garden View</h5>
+            <h6>&#8369;5150.00 per night</h6>
+            <div class="features mb-4">
+              <h6 class="mb-1">Features</h6>
+              <span class="badge rounded-pill bg-light text-dark text-wrap">
+                King-sized bed
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap">
+                Private balcony
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap">
+                24/7 room service
+              </span>
+            </div>
+            <div class="facilities mb-4">
+              <h6 class="mb-1">Facilities</h6>
+              <span class="badge rounded-pill bg-light text-dark text-wrap">
+                Flat Screen Television
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap">
+                Free-wifi
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap">
+                Aircon
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap">
+                Room Heater
+              </span>
+            </div>
+
+            <div class="guests mb-4">
+              <h6 class="mb-1">Guests</h6>
+              <span class="badge rounded-pill bg-light text-dark text-wrap">
+                5 Adults
+              </span>
+              <span class="badge rounded-pill bg-light text-dark text-wrap">
+                4 Children
+              </span>
+            </div>
+
             <div class="rating mb-4">
               <h6 class="mb-1">Rating</h6>
               <i class="bi bi-star-fill text-warning"></i>
@@ -173,7 +245,8 @@
                 24/7 room service
               </span>
             </div>
-            <div class="facilities mb-3">
+
+            <div class="facilities mb-4">
               <h6 class="mb-1">Facilities</h6>
               <span class="badge rounded-pill bg-light text-dark text-wrap">
                 Flat Screen Television
@@ -188,58 +261,17 @@
                 Room Heater
               </span>
             </div>
-            <div class="rating mb-4">
-              <h6 class="mb-1">Rating</h6>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-            </div>
-            <a
-              href="#"
-              class="btn btn-primary d-flex justify-content-center mb-2">Book</a>
-            <a
-              href="#"
-              class="btn btn-sm btn-outline-dark shadow-none d-flex justify-content-center">More Details</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 my-3">
-        <div
-          class="card border-0 shadow"
-          style="max-width: 350px; margin: auto">
-          <img src="/images/rooms/1.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Deluxe Suite with Garden View</h5>
-            <h6>&#8369;5150.00 per night</h6>
-            <div class="features mb-3">
-              <h6 class="mb-1">Features</h6>
+
+            <div class="guests mb-4">
+              <h6 class="mb-1">Guests</h6>
               <span class="badge rounded-pill bg-light text-dark text-wrap">
-                King-sized bed
+                5 Adults
               </span>
               <span class="badge rounded-pill bg-light text-dark text-wrap">
-                Private balcony
-              </span>
-              <span class="badge rounded-pill bg-light text-dark text-wrap">
-                24/7 room service
+                4 Children
               </span>
             </div>
-            <div class="facilities mb-3">
-              <h6 class="mb-1">Facilities</h6>
-              <span class="badge rounded-pill bg-light text-dark text-wrap">
-                Flat Screen Television
-              </span>
-              <span class="badge rounded-pill bg-light text-dark text-wrap">
-                Free-wifi
-              </span>
-              <span class="badge rounded-pill bg-light text-dark text-wrap">
-                Aircon
-              </span>
-              <span class="badge rounded-pill bg-light text-dark text-wrap">
-                Room Heater
-              </span>
-            </div>
+
             <div class="rating mb-4">
               <h6 class="mb-1">Rating</h6>
               <i class="bi bi-star-fill text-warning"></i>
@@ -313,7 +345,7 @@
             class="d-inline-block text-decoration-none text-dark mb-2">
             <i class="bi bi-telephone-fill"></i> (082)296-2606
           </a>
-          
+
         </div>
 
         <div class="bg-white p-4 rounded mb-4">

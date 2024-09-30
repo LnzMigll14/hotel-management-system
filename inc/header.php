@@ -20,7 +20,7 @@
                     <a class="nav-link active fw-bold" aria-current="page" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-bold" href="#">Rooms</a>
+                    <a class="nav-link fw-bold" href="rooms.php">Rooms</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link fw-bold" href="facilities.php">Facilities</a>
