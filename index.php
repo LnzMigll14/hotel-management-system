@@ -233,7 +233,7 @@
           <div class="card-body">
             <h5 class="card-title">Deluxe Suite with Garden View</h5>
             <h6>&#8369;5150.00 per night</h6>
-            <div class="features mb-3">
+            <div class="features mb-4">
               <h6 class="mb-1">Features</h6>
               <span class="badge rounded-pill bg-light text-dark text-wrap">
                 King-sized bed
