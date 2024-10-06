@@ -3,14 +3,7 @@
         <div class="col-lg-4 p-4">
             <h3 class="text-custom-red fw-bold mb-2">RED DRAGON HOTEL</h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                egestas ultrices purus et efficitur. Proin porta velit vel pretium
-                vestibulum. Morbi vestibulum, ligula mollis pharetra facilisis, odio
-                turpis malesuada mauris, ac lobortis nisl mauris at risus. Fusce
-                auctor, sapien ac tempor varius, neque orci ultrices sem, finibus
-                mattis quam turpis in justo. Vivamus elit ligula, euismod quis dolor
-                sit amet, aliquam consequat lorem. Suspendisse posuere fringilla
-                pretium.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas ultrices purus et efficitur. Proin porta velit vel pretium vestibulum. Morbi vestibulum
             </p>
         </div>
         <div class="col-lg-4 p-4">
