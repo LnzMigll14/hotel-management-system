@@ -137,7 +137,7 @@
                                         <p class="card-text mb-1"><i class="bi bi-twitter me-1"></i>
                                             <span id="tw"></span>
                                         </p>
-                                        
+
                                     </div>
                                     <div class="mb-4">
                                         <h6 class="card-subtitle mb-1 fw-bold">iFrame</h6>
@@ -222,6 +222,52 @@
                     </div>
 
 
+                    <!-- Management settings section -->
+                    <div class="card border-0 shadow mb-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <h5 class="card-title m-0">Management Team</h5>
+                                <button type="button" class="btn btn-dark shadow-none btn-sm" data-bs-toggle="modal" data-bs-target="#team-s">
+                                    <i class="bi bi-pencil-square"></i> 
+                                </button>
+                            </div>
+                            <div class="row" id="team-data">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Management team modal -->
+                    <div class="modal fade" id="team-s" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <form id="team_s_form">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Add Team Member</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mb-3">
+                                            <label class="form-label fw-bold">Name</label>
+                                            <input type="text" name="member_name" id="member_name_inp" class="form-control shadow-none" required />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label fw-bold">Picture</label>
+                                            <input type="file" name="member_picture" accept="[.jpg, .png, .webp, .jpeg]" id="member_picture_inp" class="form-control shadow-none" required />
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" onclick="" class="btn btn-secondary" data-bs-dismiss="modal">CANCEL</button>
+                                        <button type="submit" class="btn custom-bg text-white shadow-none">SUBMIT</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                   
+
                 </div>
             </div>
         </div>
@@ -237,6 +283,10 @@
             let site_about_inp = document.getElementById('site_about_inp');
 
             let contacts_s_form = document.getElementById('contacts_s_form');
+
+            let team_s_form = document.getElementById('team_s_form');
+            let member_name_inp = document.getElementById('member_name_inp');
+            let member_picture_inp = document.getElementById('member_picture_inp');
 
             function get_general() {
                 let site_title = document.getElementById('site_title');
@@ -356,7 +406,7 @@
 
             function contacts_inp(data) {
 
-                let contacts_inp_id = ['address_inp', 'gmap_inp', 'pn1_inp', 'pn2_inp', 'email_inp', 'fb_inp', 'insta_inp','tw_inp', 'iframe_inp'];
+                let contacts_inp_id = ['address_inp', 'gmap_inp', 'pn1_inp', 'pn2_inp', 'email_inp', 'fb_inp', 'insta_inp', 'tw_inp', 'iframe_inp'];
 
                 for (i = 0; i < contacts_inp_id.length; i++) {
                     document.getElementById(contacts_inp_id[i]).value = data[i + 1];
@@ -422,6 +472,59 @@
                 };
 
                 xhr.send(data_str);
+            }
+
+            team_s_form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                add_member();
+                
+
+                });
+
+
+
+
+
+
+            function add_member(){
+
+                let data = new FormData();
+                data.append('name', member_name_inp.value);
+                data.append('picture', member_picture_inp.files[0]);
+                data.append('add_member', '');
+
+
+                let xhr = new XMLHttpRequest();
+                xhr.open("POST", "ajax/settings_crud.php", true);
+
+
+                xhr.onload = function() {
+                    console.log(this.responseText);
+                    var myModal = document.getElementById('team-s');
+                    var modal = bootstrap.Modal.getInstance(myModal);
+                    modal.hide();
+
+                  if(this.responseText == 'inv_img'){
+                    alert('Error', 'Invalid image type!');
+                  }
+
+                  if(this.responseText == 'inv_size'){
+                    alert('Error', 'Image size exceeds 2MB!');
+                  }
+
+                  if(this.responseText == 'upd_failed'){
+                    alert('Error', 'Failed to upload image!');
+                  }
+
+                  else{
+                    alert('Success', 'Member added successfully!');
+                    member_name_inp.value = '';
+                    member_picture_inp.value = '';
+                  }
+                };
+
+                xhr.send(data);
+
             }
 
 
